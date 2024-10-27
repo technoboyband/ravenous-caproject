@@ -1,7 +1,3 @@
-
-
-
-
 class Business {
     image: string = '';
     name: string = '';

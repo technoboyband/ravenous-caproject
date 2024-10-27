@@ -1,5 +1,6 @@
 import type Business from "./Business"
 import BusinessCard from "./BusinessCard";
+import '../styles/BusinessList.css'
 
 
 interface BusinessListProps {
@@ -7,7 +8,7 @@ interface BusinessListProps {
 }
 
 function BusinessList(props: BusinessListProps){
-    return (<div>
+    return (<div className="BusinessList">
         {props.businesses.map(business => {
             return (<BusinessCard business={business} />);
         })}

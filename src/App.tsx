@@ -1,8 +1,7 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import BusinessList from './components/BusinessList';
 import Business from './components/Business';
+import SearchBar from './components/SearchBar';
 
 function App() {
 
@@ -27,11 +26,46 @@ zipcode: '98103',
 category: 'Italian',
 rating: 4.0,
 reviewCount: 90
+}), 
+new Business ({
+  image: 'https://content.codecademy.com/programs/react/ravenous/pizza.jpg',
+name: 'Windy city',
+address: 'Phinney',
+city: 'Seattle',
+state: 'WA',
+zipcode: '98103',
+category: 'Italian',
+rating: 4.0,
+reviewCount: 90
+}), 
+new Business ({
+  image: 'https://content.codecademy.com/programs/react/ravenous/pizza.jpg',
+name: 'Razzis',
+address: 'Fremont',
+city: 'Seattle',
+state: 'WA',
+zipcode: '98101',
+category: 'Italian',
+rating: 4.0,
+reviewCount: 90
+})
+, 
+new Business ({
+  image: 'https://content.codecademy.com/programs/react/ravenous/pizza.jpg',
+name: 'pizza',
+address: 'Fremont',
+city: 'Seattle',
+state: 'WA',
+zipcode: '98101',
+category: 'Italian',
+rating: 4.0,
+reviewCount: 90
 })];
 
 
   return (
     <div className="App">
+      <SearchBar></SearchBar>
       <BusinessList businesses={MOCK_BUSINESS}></BusinessList>
     </div>
   );
